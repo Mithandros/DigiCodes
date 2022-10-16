@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ededed"
+    android:paddingLeft="15dp"
+    android:paddingTop="20dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/post_review"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/postFeedBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Review"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <ImageView
+                android:padding="3dp"
+                android:id="@+id/profImage1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/review_images"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:padding="3dp"
+                android:id="@+id/profImage2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/review_images"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:padding="3dp"
+                android:id="@+id/profImage3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/review_images"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+            <ImageView
+                android:padding="3dp"
+                android:id="@+id/profImage4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/review_images"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+            <ImageView
+                android:padding="3dp"
+                android:id="@+id/profImage5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/review_images"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <com.maksof.linkapp.ExpandedHeightGridView
+            android:id="@+id/recImgCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:isScrollContainer="false"
+            android:minHeight="110dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+        <Button
+            android:id="@+id/postuploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:background="@drawable/groups_background"
+            android:drawableTop="@drawable/image_uploasd"
+            android:paddingLeft="8sp"
+            android:paddingTop="12sp"
+            android:paddingRight="8sp"
+            android:paddingBottom="5sp"
+            android:text="@string/upload_image_txt"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/postratingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:text="Your Rating"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/postRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:stepSize="0.1"
+            android:numStars="5"
+            android:outlineAmbientShadowColor="#ffffff"
+            android:theme="@style/RatingBar"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/closePostDialogue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@id/postReview"
+                android:layout_toLeftOf="@id/postReview"
+                android:background="@drawable/black_btn_background"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/postReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/black_btn_background"
+                android:text="@string/post"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

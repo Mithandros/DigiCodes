@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notification">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="15dp">
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/notificationBack"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="7.5dp"-->
+<!--            android:background="@color/colorPrimaryDark"-->
+<!--            android:contentDescription="@string/go_back"-->
+<!--            app:srcCompat="@drawable/ic_chevron_left" />-->
+
+        <TextView
+            android:id="@+id/groupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/notifications"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:gravity="top"
+           android:paddingLeft="15dp"
+           android:paddingTop="20dp"
+           android:paddingBottom="20dp"
+           android:paddingRight="15dp">
+
+           <Switch
+               android:id="@+id/switch1"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:theme="@style/SwitchButton"
+               android:layout_weight="1"
+               android:text="@string/toggle_notifications" />
+       </LinearLayout>
+
+    <ListView
+        android:id="@+id/notificationList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:paddingBottom="20dp"
+
+        />
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noNotification"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No notifications found"/>
+
+<!--   </LinearLayout>-->
+
+</LinearLayout>

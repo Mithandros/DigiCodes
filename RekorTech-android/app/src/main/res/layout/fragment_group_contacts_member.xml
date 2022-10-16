@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".group_member_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/frageContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <Button
+            android:id="@+id/addMembersToGroup"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_person_add_black_24dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:background="@drawable/white_btn_background"
+            android:elevation="9dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Add members" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.maksof.linkapp.AnimatedExpandableListView
+            android:id="@+id/groupContactList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/noGroup"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No records found"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

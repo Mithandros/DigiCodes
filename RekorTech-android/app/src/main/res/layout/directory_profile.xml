@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/labUserContainer"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <ScrollView
+        android:id="@+id/directory_prof_mainCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/lab_profMainCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="7.5dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1" >
+                <ImageButton
+                    android:id="@+id/dir_profBackBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7.5dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:layout_marginBottom="7.5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:contentDescription="@string/go_back"
+                    app:srcCompat="@drawable/ic_chevron_left" />
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <ImageView
+                android:id="@+id/dir_profFLetter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/white_btn_background"
+                android:gravity="center"
+                android:maxWidth="75dp"
+                android:maxHeight="75dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:translationZ="1dp" />
+
+            <LinearLayout
+                android:id="@+id/lab_profHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lab_user_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp">
+
+                    <TextView
+                        android:id="@+id/dir_profName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="7.5dp"
+                        android:gravity="center|center_horizontal"
+                        android:text="Rose Parley"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="7.5dp"
+                    >
+                    <TextView
+                        android:id="@+id/lab_profOccupTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Photographer"
+                        android:textColor="@color/fontColor"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/lab_profOccupTxtEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/defaultBorderFlagColor"
+                        app:srcCompat="@drawable/ic_edit_black_24dp"
+                        android:visibility="visible"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/reviewCallBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="Call"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/phone_black" />
+
+                    <ImageButton
+                        android:id="@+id/reviewSmsBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="SMS"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/chat" />
+
+                    <ImageButton
+                        android:id="@+id/reviewWhatsappBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="Whatsapp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/ic_whatsapp" />
+
+                    <ImageButton
+                        android:id="@+id/dir_profDownloadBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="download contact"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/download" />
+                    <ImageButton
+                        android:id="@+id/dir_profDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="Download"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lab_user_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="start"
+                        android:text="@string/personal_information"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/phone_number"
+                        app:srcCompat="@drawable/phone_black" />
+
+                    <TextView
+                        android:id="@+id/numberTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="0310-123456798"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/emailIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/email"
+                        app:srcCompat="@drawable/email" />
+
+                    <TextView
+                        android:hint="@string/email"
+                        android:id="@+id/emailTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="rose_parlor123@gmail.com"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                    <ImageButton
+                        android:visibility="visible"
+                        android:id="@+id/emailTxtEdit"
+                        android:paddingLeft="5dp"
+                        android:layout_toEndOf="@+id/emailTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_edit_black_24dp"
+                        android:background="@color/defaultBorderFlagColor"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/webIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/email"
+                        app:srcCompat="@drawable/ic_public" />
+
+                    <TextView
+                        android:id="@+id/websiteTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:hint="@string/website"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="www.maksof.com"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                    <ImageButton
+                        android:id="@+id/websiteTxtEdit"
+                        android:layout_toRightOf="@+id/websiteTxt"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        app:srcCompat="@drawable/ic_edit_black_24dp"
+                        android:background="@color/defaultBorderFlagColor"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/location"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/Location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="4sp"
+                        android:hint="@string/address"
+                        android:text=""
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                    <ImageButton
+                        android:visibility="visible"
+                        android:id="@+id/LocationEdit"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/Location"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_edit_black_24dp"
+                        android:background="@color/defaultBorderFlagColor"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/dir_oneLineDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="4sp"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp"
+                        android:hint="One line description"
+                        android:text="I am a builder, carpenter, plumber, do great work at great prices."
+                        android:layout_marginBottom="7dp"
+                        />
+
+                    <ImageButton
+                        android:visibility="visible"
+                        android:id="@+id/dir_oneLineDescEdit"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/dir_oneLineDesc"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_edit_black_24dp"
+                        android:background="@color/defaultBorderFlagColor"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:id="@+id/dirProfMainDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="4sp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:hint="About"
+                        android:text="I build anything from furniture to skyscrapers. I have a team of helpers who make sure the work can be completed quickly efficiently and to high quality. I guarantee an excellent service. I will supply all materials for the job and am registered with the union of builders. Feel free to get in touch!"
+                        android:textColor="@color/fontColor"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        />
+
+                    <ImageButton
+                        android:layout_weight="0.5"
+                        android:visibility="visible"
+                        android:id="@+id/dirProfMainDescEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/dirProfMainDesc"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_edit_black_24dp"
+                        android:background="@color/defaultBorderFlagColor"/>     </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewMore"
+                    android:layout_height="wrap_content"
+                    android:text="View more"
+                    android:onClick="viewMoreMethod"
+                    android:textColor="@color/active_blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/viewLess"
+                    android:layout_height="wrap_content"
+                    android:text="View Less"
+                    android:visibility="gone"
+                    android:onClick="viewLessMethod"
+                    android:textColor="@color/active_blue"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/lab_user_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/image_album"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+                    <ImageButton
+                        android:id="@+id/dir_profAddImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:contentDescription="@string/add"
+                        app:srcCompat="@drawable/add" />
+                    <TextView
+                        android:id="@+id/updateImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update"
+                        android:paddingRight="5dp"
+                        android:layout_toLeftOf="@+id/dir_profAddImage"/>
+                </RelativeLayout>
+                <com.maksof.linkapp.ExpandedHeightGridView
+                    android:id="@+id/dirProfImgCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:isScrollContainer="false"
+                    android:minHeight="110dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/expanded_image2"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_launcher_background" />
+</FrameLayout>

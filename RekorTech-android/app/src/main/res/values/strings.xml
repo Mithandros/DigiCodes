@@ -1,0 +1,409 @@
+<resources>
+    <string name="app_name">RekorTech</string>
+    <string-array name="country">
+        <item>Country</item>
+        <item>United kingdom</item>
+        <item>Pakistan</item>
+        <item>Indonesia</item>
+    </string-array>
+    <string-array name="DialingCountryCode" >
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+
+    <string-array name="countrycode">
+        <item>+54</item>
+        <item>+1</item>
+        <item>+598</item>
+        <item>+81</item>
+        <item>+56</item>
+        <item>+7</item>
+        <item>+56</item>
+        <item>+1</item>
+        <item>+56</item>
+        <item>+672</item>
+        <item>+55</item>
+        <item>+39</item>
+        <item>+33</item>
+        <item>+672</item>
+        <item>+81</item>
+        <item>+33</item>
+        <item>+34</item>
+        <item>+49</item>
+        <item>+56</item>
+        <item>+86</item>
+        <item>+44</item>
+        <item>+48</item>
+        <item>+82</item>
+        <item>+92</item>
+        <item>+34</item>
+        <item>+82</item>
+        <item>+49</item>
+        <item>+852</item>
+        <item>+40</item>
+        <item>+7</item>
+        <item>+51</item>
+        <item>+672</item>
+        <item>+91</item>
+        <item>+54</item>
+        <item>+39</item>
+        <item>+672</item>
+        <item>+1</item>
+        <item>+420</item>
+        <item>+81</item>
+        <item>+7</item>
+        <item>375</item>
+        <item>+49</item>
+        <item>+7</item>
+        <item>+54</item>
+        <item>+1</item>
+        <item>+32</item>
+        <item>+56</item>
+        <item>+7</item>
+        <item>+44</item>
+        <item>+27</item>
+        <item>+44</item>
+        <item>+359</item>
+        <item>+64</item>
+        <item>+81</item>
+        <item>+47</item>
+        <item>+46</item>
+        <item>+380</item>
+        <item>+86</item>
+    </string-array>
+    <string name="message_permission_disabled">As you have disable the permission, you will have to go on setting and allow to access contacts</string>
+    <string name="permission_rationale">Allow us to access your contacts</string>
+    <string name="veriDet">Please enter the verification code sent to</string>
+    <string-array name="occupation">
+        <item>Web developer</item>
+        <item>Web designer</item>
+        <item>Interior designer</item>
+        <item>Builder</item>
+        <item>Tester</item>
+        <item>Plumber</item>
+        <item>Digital agent</item>
+        <item>Photographer</item>
+    </string-array>
+
+    <string-array name="distance">
+        <item>KM </item>
+        <item>5 </item>
+        <item>10 </item>
+        <item>15 </item>
+        <item>20 </item>
+        <item>100 </item>
+        <item>All </item>
+    </string-array>
+    <string-array name="distanceM">
+        <item>Miles </item>
+        <item>5 </item>
+        <item>10 </item>
+        <item>15 </item>
+        <item>20 </item>
+        <item>100 </item>
+        <item>All </item>
+    </string-array>
+    <!-- can be deleted later -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="termsAndConditions">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed libero enim sed faucibus. Adipiscing at in tellus integer. Praesent elementum facilisis leo vel fringilla. Vitae purus faucibus ornare suspendisse sed nisi. \n\n
+        Vitae auctor eu augue ut lectus arcu. Aliquet lectus proin nibh nisl condimentum id venenatis a. Porttitor rhoncus dolor purus non enim praesent elementum. Fames ac turpis egestas maecenas. Vel elit scelerisque mauris pellentesque pulvinar pellentesque. Sed odio morbi quis commodo. Id cursus metus aliquam eleifend mi in. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Diam sollicitudin tempor id eu. Blandit libero volutpat sed cras ornare arcu dui vivamus. \n\n
+        Bibendum enim facilisis gravida neque convallis a. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Orci dapibus ultrices in iaculis. Id faucibus nisl tincidunt eget. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Non pulvinar neque laoreet suspendisse. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Aliquam id diam maecenas ultricies mi. At erat pellentesque adipiscing commodo elit at. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. \n\n
+        Vitae congue eu consequat ac. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Amet commodo nulla facilisi nullam vehicula ipsum a. Id aliquet risus feugiat in ante metus dictum at. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Luctus venenatis lectus magna fringilla urna porttitor. Vitae nunc sed velit dignissim sodales ut.
+    </string>
+    <string name="recommend">Recommend</string>
+    <string name="name">Name</string>
+    <string name="occupation">Occupation</string>
+    <string name="address">Address</string>
+    <string name="feedback">Review</string>
+    <string name="upload_image_txt">Upload image</string>
+    <string name="share">Share Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="your_rating">Your rating</string>
+    <string name="verfication_code">Verification code</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="reset">Reset</string>
+    <string name="log_in">Login</string>
+    <string name="toggle_notifications">Toggle notifications</string>
+    <string name="home">Home</string>
+    <string name="my_profile">My profile</string>.
+    <string name="notification">Notification</string>
+    <string name="change_passowrd">Change passowrd</string>
+    <string name="log_out">Log out</string>
+    <string name="sign_up">Sign up</string>
+    <string name="reset_password">Reset password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="go_back">Go back</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="phone_book">Phone book</string>
+    <string name="lab">Lynks</string>
+    <string name="groups">Groups</string>
+    <string name="review_images">Review images</string>
+    <string name="add">Add</string>
+    <string name="reviews">Reviews</string>
+    <string name="location">Location</string>
+    <string name="phone_number">Phone number</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password">Password</string>
+    <string name="review_image_zoom">Review image zoom</string>
+    <string name="recommended_by">Recommended By</string>
+    <string name="personal_information">Personal information</string>
+    <string name="email">Email</string>
+    <string name="create_group">Create group</string>
+    <string name="update_profile">Update  profile</string>
+    <string name="group_name">Group name</string>
+    <string name="create">Create</string>
+    <string name="create_new_group">Create new group</string>
+    <string name="share_to_lab">Share to Lynks</string>
+    <string name="share_to_group">Share to group</string>
+    <string name="website">Website</string>
+    <string name="post_review">Post review</string>
+    <string name="post">Post</string>
+    <string name="directory">Directory</string>
+    <string name="create_directory">Create directory</string>
+    <string name="keep_me_signed_in">Keep me signed in</string>
+    <string name="signup_excalmation">Signup!</string>
+    <string name="no_account_yet">No account yet?</string>
+    <string name="forgot_password_question">Forgot password?</string>
+    <string name="one_line_description">One line description</string>
+    <string name="about_me">About me</string>
+    <string name="servcies">Services</string>
+    <string name="added_by">Degree MBBS, FCPS, MCPS, DHMS</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_sure_txt">Are you sure you want to share your profile with Dr. Sadaf Amin</string>
+    <string name="share_que_mark">Share ?</string>
+    <string name="shared">Share Profile</string>
+    <string name="drawerhamberger">Drawer hamburger</string>
+    <string name="submit">Submit</string>
+    <string name="image_album">Gallery</string>
+    <string name="error">error</string>
+    <string name="logo_with_text">Logo with text</string>
+    <string name="city">City</string>
+    <string name="accept">Accept</string>
+    <string name="resend_sms">Resend sms</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="delete_profile">Delete profile</string>
+    <string name="edit_group">Edit group</string>
+    <string name="delete_group">Delete group</string>
+    <string name="view_members">View members</string>
+    <string name="settings">Settings</string>
+    <string name="restrict_sharing">Restrict sharing</string>
+    <string name="let_your_friends_share_your_profile_in_lab">Let your friends share your profile in Lynks</string>
+    <string name="directory_search_in_miles">Doctors search in miles</string>
+    <string name="notifications">Notifications</string>
+    <string name="appName">RekorTech</string>
+    <string-array name="entry">
+        <item>Select group</item>
+    </string-array>
+    <item name="glide_tag" type="id" />
+</resources>

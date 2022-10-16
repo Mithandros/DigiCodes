@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ededed"
+    android:paddingBottom="20dp"
+>    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp">
+
+            <ImageButton
+                android:id="@+id/dirBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="@string/go_back"
+                app:srcCompat="@drawable/ic_chevron_left" />
+            <TextView
+                android:id="@+id/groupName"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginStart="65dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="@string/create_directory"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp"
+            android:padding="15dp">
+
+            <ImageButton
+                android:id="@+id/newDirecPorfileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7.5dp"
+                android:background="@drawable/groups_background"
+                android:contentDescription="@string/my_profile"
+                android:padding="9dp"
+                app:srcCompat="@drawable/ic_add_a_photo" />
+
+            <EditText
+                android:id="@+id/newDirecName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/newDirecOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:ems="10"
+                android:hint="@string/occupation"
+                android:inputType="textPersonName"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/newDirecPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:ems="10"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/newDirecAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:ems="10"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/newDirecWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:ems="10"
+                android:hint="@string/website"
+                android:inputType="text"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/newDirecOne_LineDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:ems="10"
+                android:hint="@string/one_line_description"
+                android:inputType="text"
+                android:autofillHints="" />
+
+
+            <EditText
+                android:id="@+id/newDirecDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/about_me"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <EditText
+                android:id="@+id/newDirecServices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.5dp"
+                android:ems="10"
+                android:hint="Services"
+                android:inputType="text"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/newDirecuploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/groups_background"
+                android:drawableTop="@drawable/image_uploasd"
+                android:paddingLeft="8sp"
+                android:paddingTop="12sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="5sp"
+                android:text="@string/upload_image_txt"
+                android:textColor="#000000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/closeNewDirecDialogue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@id/shareNewDirecProfile"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/black_btn_background"/>
+
+                <Button
+                    android:id="@+id/shareNewDirecProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/black_btn_background"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

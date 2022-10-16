@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/animate_lab_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/labCallBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/white_btn_background"
+        android:contentDescription="Call"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:srcCompat="@drawable/phone_black" />
+
+    <ImageButton
+        android:id="@+id/labSmsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/white_btn_background"
+        android:contentDescription="SMS"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:srcCompat="@drawable/chat" />
+
+    <ImageButton
+        android:id="@+id/labWhatsappBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/white_btn_background"
+        android:contentDescription="Whatsapp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:srcCompat="@drawable/ic_whatsapp" />
+
+    <ImageButton
+        android:id="@+id/labInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/white_btn_background"
+        android:contentDescription="Info"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:srcCompat="@drawable/info" />
+
+</LinearLayout>

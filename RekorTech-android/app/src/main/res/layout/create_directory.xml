@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_directory">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Create Profile"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/newDirecPorfileImage"
+            android:layout_width="29dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7.5dp"
+            android:background="@drawable/groups_background"
+            android:contentDescription="@string/my_profile"
+            app:srcCompat="@drawable/ic_add_a_photo"/>
+        <EditText
+            android:id="@+id/newDirecFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+
+
+        <EditText
+            android:id="@+id/newDirecOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="Occupation / Business"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/newDirecPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/newDirecEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <fragment
+                android:id="@+id/location_autocomplete_fragment6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"/>
+        </androidx.cardview.widget.CardView>
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:ems="10"/>
+        <EditText
+            android:id="@+id/newDirecWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/website"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/newDirecOne_LineDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/one_line_description"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/newDirecServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="Services" />
+        
+        <com.maksof.linkapp.ExpandedHeightGridView
+            android:id="@+id/recImgCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:isScrollContainer="false"
+            android:minHeight="110dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+        <Button
+            android:id="@+id/newDirecuploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/groups_background"
+            android:drawableTop="@drawable/image_uploasd"
+            android:paddingLeft="8sp"
+            android:paddingTop="12sp"
+            android:paddingRight="8sp"
+            android:paddingBottom="5sp"
+            android:text="@string/upload_image_txt"
+            android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/shareNewDirecProfile"
+                android:layout_marginTop="7.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_btn_background"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+        <!--        </RelativeLayout>-->
+    </LinearLayout>
+</ScrollView>

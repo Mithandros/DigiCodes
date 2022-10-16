@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/labUserContainer"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".lab_user_details"
+    tools:ignore="MissingPrefix">
+
+
+    <ScrollView
+        android:id="@+id/lab_user_mainCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lab_profMainCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="7.5dp">
+
+
+            <ImageButton
+                android:id="@+id/lab_profBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7.5dp"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:background="@color/colorPrimaryDark"
+                android:contentDescription="@string/go_back"
+                app:srcCompat="@drawable/ic_chevron_left" />
+
+            <TextView
+            android:id="@+id/lab_profFLetter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_btn_background"
+            android:contentDescription="@string/my_profile"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:maxWidth="75dp"
+            android:maxHeight="75dp"
+            android:paddingTop="0dp"
+            android:text="J"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:translationZ="1dp" />
+            <LinearLayout
+                android:id="@+id/lab_profHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lab_user_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp">
+
+                    <TextView
+                        android:id="@+id/lab_profName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="7.5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center|center_horizontal"
+                        android:text="Rose Parley"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/deleteLAB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/defaultBorderFlagColor"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:theme="@style/RatingBar" />
+
+                    <TextView
+                        android:id="@+id/sendToReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffbc00"
+                        android:contentDescription="@string/your_rating"
+                        android:maxLength="3"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="5.0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lab_profOccup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7.5dp"
+                    android:gravity="center"
+                    android:text="Photographer"
+                    android:textColor="@color/fontColor"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/contactInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:id="@+id/reviewCallBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="Call"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/phone_black" />
+
+                    <ImageButton
+                        android:id="@+id/reviewSmsBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="SMS"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/chat" />
+
+                    <ImageButton
+                        android:id="@+id/reviewWhatsappBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="Whatsapp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        app:srcCompat="@drawable/ic_whatsapp" />
+                    <ImageButton
+                        android:id="@+id/labDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="download contact"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/download" />
+                    <Button
+                        android:id="@+id/lab_profReshareBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="43dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shared_btn_background"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/shared"
+                        android:textColor="@color/colorPrimary"
+                        android:theme="@style/Widget.AppCompat.ImageButton"
+                        />
+                    <ImageButton
+                        android:id="@+id/deleteContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_background"
+                        android:contentDescription="download contact"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lab_user_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingBottom="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="start"
+                        android:text="@string/personal_information"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@+id/recommendedBy">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/recommend"
+                        app:srcCompat="@drawable/supervisor" />
+
+                    <TextView
+                        android:id="@+id/recommendText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/recommended_by"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/last_person_recommended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/recommendText"
+                        android:layout_toRightOf="@id/recommendText"
+                        android:text=""
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/seperator"
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/last_person_recommended"
+                        android:layout_toRightOf="@id/last_person_recommended"
+                        android:background="@color/fontColor" />
+
+                    <TextView
+                        android:id="@+id/openSharingUserModal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/last_person_recommended"
+                        android:layout_toRightOf="@id/last_person_recommended"
+                        android:text="+6 Others"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/phone_number"
+                        app:srcCompat="@drawable/phone_black" />
+
+                    <TextView
+                        android:id="@+id/numberTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="0310-123456798"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/emailIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/email"
+                        app:srcCompat="@drawable/email" />
+
+                    <TextView
+                        android:id="@+id/emailTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="rose_parlor123@gmail.com"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/webIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/email"
+                        app:srcCompat="@drawable/ic_public" />
+
+                    <TextView
+                        android:id="@+id/websiteTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:text="www.maksof.com"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/location"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/Location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:lineSpacingExtra="4sp"
+                        android:text="1513 Panama St NE Minneapolis, MN 55408, United Kingdom"
+                        android:textColor="@color/fontColor"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reviews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/lab_user_bg"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/reviews"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+                    <ImageButton
+                        android:id="@+id/openPostModal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:contentDescription="@string/add"
+                        app:srcCompat="@drawable/add" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/reviewsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:nestedScrollingEnabled="true"/>
+                </LinearLayout>
+
+
+<!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:id="@+id/nestedScrollView">
+
+                <ListView
+                    android:id="@+id/reviewsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:animateLayoutChanges="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dp"
+                    android:isScrollContainer="false"
+                    android:numColumns="1"
+                    android:stretchMode="columnWidth" />
+
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:contentDescription="@string/review_image_zoom"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_launcher_background" />
+</FrameLayout>

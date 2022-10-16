@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/toGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/groups_background"
+    android:gravity="center|start"
+    android:padding="7.5dp">
+
+    <TextView
+        android:id="@+id/groupMainLetter"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/contact_icon_shape"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="C"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/groupMainLetter"
+        android:layout_toRightOf="@id/groupMainLetter"
+        android:ellipsize="end"
+        android:ems="3"
+        android:maxLines="1"
+        android:minWidth="10dp"
+        android:minLines="1"
+        android:singleLine="true"
+        android:text="My Group"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/editGroup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/groupName"
+        android:layout_toRightOf="@id/groupName"
+        android:src="@drawable/edit_group_icon"
+        android:textSize="16sp"
+        android:visibility="gone"
+
+        />
+
+    <ImageView
+        android:id="@+id/deleteGroup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/editGroup"
+        android:layout_toRightOf="@id/editGroup"
+        android:src="@drawable/delete_group_icon"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

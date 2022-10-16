@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    fontPath="fonts/RabbidHighwaySignII.otf"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical"
+    tools:context=".groupContacts">
+    <LinearLayout
+        android:id="@+id/addContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/activity_add_participants"/>
+    </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:id="@+id/mainView"
+     >
+     <androidx.appcompat.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/colorPrimaryDark"
+         android:theme="@style/groupToolBar"
+         app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+         app:titleMarginStart="0dp"
+         app:titleTextColor="@android:color/white">
+
+         <LinearLayout
+             android:id="@+id/mainNavHeader"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingTop="5dp"
+             android:paddingEnd="0dp"
+             android:paddingRight="0dp"
+             android:paddingBottom="5dp">
+
+             <ImageButton
+                 android:id="@+id/groupContactBackBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="left"
+                 android:background="@color/colorPrimaryDark"
+                 android:contentDescription="@string/go_back"
+                 app:srcCompat="@drawable/ic_chevron_left" />
+             <TextView
+                 android:id="@+id/groupName"
+                 android:layout_weight="0.3"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="left"
+                 android:text="@string/group_name"
+                 android:textColor="#ffffff"
+                 android:textSize="24sp"
+                 android:gravity="center"
+                 android:background="@color/colorPrimaryDark"
+                 android:contentDescription="@string/go_back"
+                 app:srcCompat="@drawable/ic_chevron_left" />
+             <ImageButton
+                 android:layout_weight="0.7"
+                 android:id="@+id/triggerSearchBar"
+                 android:layout_width="match_parent"
+                 android:layout_gravity="center"
+                 android:layout_alignParentEnd="true"
+                 android:layout_height="wrap_content"
+                 android:tint="@color/colorPrimary"
+                 android:background="@color/colorPrimaryDark"
+                 android:src="@drawable/places_ic_search"
+                 android:contentDescription="@string/search_hint" />
+         </LinearLayout>
+     </androidx.appcompat.widget.Toolbar>
+     <RelativeLayout
+         android:id="@+id/searchCon"
+         android:layout_width="match_parent"
+         android:visibility="gone"
+         android:layout_height="wrap_content"
+         android:paddingStart="15dp"
+         android:paddingEnd="5dp"
+         android:elevation="10dp"
+         android:background="@color/colorPrimary"
+         android:gravity="center|start">
+
+         <ImageButton
+             android:id="@+id/closeSearchLayout"
+             android:layout_width="30dp"
+             android:contentDescription="@string/go_back"
+             android:layout_height="40dp"
+             android:tint="@color/colorPrimaryDark"
+             android:layout_marginTop="5dp"
+             android:background="@color/colorPrimary"
+             app:srcCompat="@drawable/ic_chevron_left" />
+
+         <EditText
+             android:id="@+id/mainSearchBox"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:layout_marginStart="10dp"
+             android:layout_toEndOf="@id/closeSearchLayout"
+             android:background="@color/colorPrimary"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:ems="10"
+             android:textColor="@color/colorPrimaryDark"
+             android:fontFamily="@font/montserrat"
+             android:hint="@string/search_hint"
+             android:inputType="textPersonName"
+             android:shadowColor="#000000"
+             android:textColorHint="#959595" />
+     </RelativeLayout>
+     <LinearLayout
+         android:paddingTop="10dp"
+         android:paddingStart="15dp"
+         android:paddingEnd="15dp"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+         <Button
+             android:id="@+id/addContactToGroup"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/white_btn_background"
+             android:drawableStart="@drawable/ic_person_add_black_24dp"
+             android:drawableTint="@color/colorPrimaryDark"
+             android:elevation="9dp"
+             android:fontFamily="@font/montserrat"
+             android:gravity="center"
+             android:paddingStart="15dp"
+             android:text="Add contact"
+             android:textAllCaps="false" />
+         <LinearLayout
+             android:orientation="horizontal"
+             android:id="@+id/selectOptions"
+             android:visibility="gone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:padding="6dp">
+
+             <Button
+                 android:id="@+id/phoneBook"
+                 android:layout_weight="0.5"
+                 android:fontFamily="@font/montserrat"
+                 android:minWidth="110dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:background="@drawable/left_active_toggle_btn_background"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:text="Phonebook"
+                 android:textAllCaps="true"
+                 android:textColor="@color/colorPrimary"
+                 android:textSize="13dp"
+                 />
+
+             <Button
+                 android:layout_weight="0.5"
+                 android:id="@+id/contactForm"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:background="@drawable/right_active_toggle_btn_background"
+                 android:minWidth="110dp"
+                 android:layout_marginLeft="2dp"
+                 android:paddingLeft="8dp"
+                 android:paddingRight="8dp"
+                 android:text="New contact"
+                 android:fontFamily="@font/montserrat"
+                 android:textAllCaps="true"
+                 android:textColor="@color/colorPrimary"
+                 android:textSize="13dp"
+                 />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/frageContent"
+             android:orientation="vertical" />
+     </LinearLayout>
+ </LinearLayout>
+</LinearLayout>

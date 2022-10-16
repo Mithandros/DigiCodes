@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="20dp"
+    android:id="@+id/groupHome">
+    <LinearLayout
+        android:id="@+id/createGroupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/createGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_btn_background"
+            android:elevation="9dp"
+            android:fontFamily="@font/montserrat"
+            android:shadowColor="#000000"
+            android:shadowDx="-5"
+            android:shadowDy="15"
+            android:gravity="center"
+            android:text="@string/create_new_group"
+            android:textAllCaps="false"
+            android:textColor="#000000"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/demoGroupTxtView"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/ic_circle"-->
+<!--            android:gravity="center"-->
+<!--            android:text="C"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:textSize="32sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/demo2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:layout_toRightOf="@id/demoGroupTxtView"-->
+<!--            android:text="@string/create_new_group"-->
+<!--            android:textColor="@color/colorAccent"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_toEndOf="@id/demoGroupTxtView" />-->
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/phoneHome2"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ListView
+        android:id="@+id/groupsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:paddingBottom="20dp"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noGroup"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No groups found"/>
+    </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

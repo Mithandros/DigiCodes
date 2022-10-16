@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingTop="10dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/revwFLetter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_circle"
+        android:gravity="center"
+        android:text="J"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/revwName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="100dp"
+        android:layout_toEndOf="@id/revwFLetter"
+        android:layout_toRightOf="@id/revwFLetter"
+        android:ellipsize="end"
+        android:maxWidth="250dp"
+        android:singleLine="true"
+        android:text="Jane Jane Jane Jane Jane Jane Jane Jane Jane "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7.5dp"
+        android:numStars="5"
+        android:rating="4"
+        android:theme="@style/RatingBar" />
+    <ImageView
+        android:id="@+id/deleteFeedback"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+    <TextView
+        android:id="@+id/revwDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/revwFLetter"
+        android:layout_alignStart="@id/revwName"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        android:lineSpacingExtra="4sp"
+        android:text="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+        android:textSize="12dp" />
+
+    <RelativeLayout
+        android:id="@+id/revwImgCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/revwDescription"
+        android:layout_alignStart="@id/revwName"
+        android:layout_alignLeft="@id/revwName"
+        android:layout_marginTop="10dp">
+        <com.maksof.linkapp.ExpandedHeightGridView
+            android:id="@+id/labProfImgCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:isScrollContainer="false"
+            android:minHeight="110dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/revwImgCon"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        android:foregroundGravity="center" />
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/expanded_image3"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/review_image_zoom"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_launcher_background" />
+</RelativeLayout>

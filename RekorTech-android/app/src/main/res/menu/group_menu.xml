@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.maksof.fyp.MainActivity">
+
+<item android:id="@+id/edit"
+    android:orderInCategory="1"
+    app:showAsAction="never"
+    android:title="@string/edit_group"
+    />
+<item android:id="@+id/delete"
+    android:orderInCategory="1"
+    app:showAsAction="never"
+    android:title="@string/delete_group"
+    />
+    <item android:id="@+id/members"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:title="@string/view_members"
+        />
+</menu>

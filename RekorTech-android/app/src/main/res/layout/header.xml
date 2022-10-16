@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SideheaderLinearView"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/gradient_topbar"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/nav_circle"
+        android:gravity="center"
+        android:text="A"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Muhammad Hussain"
+        android:fontFamily="@font/montserrat"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/colorPrimary"
+        android:autoSizeMaxTextSize="20sp"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="7.5dp"
+        android:background="@color/fontColor" />
+
+</LinearLayout>

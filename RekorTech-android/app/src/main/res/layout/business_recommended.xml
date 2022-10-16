@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ededed"
+    android:paddingLeft="15dp"
+    android:paddingTop="20dp"
+    android:paddingRight="10dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="10dp">
+
+    <LinearLayout
+        android:id="@+id/hideKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/recommend"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+
+
+        <EditText
+            android:id="@+id/bsnsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/bsnsEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/bsnsPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/bsnsOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="Occupation / Business"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/bsnsWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/website"
+            android:inputType="text"
+            android:autofillHints="" />
+
+<!--        <EditText
+            android:id="@+id/bsnsAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:autofillHints="" />-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <fragment
+                android:id="@+id/location_autocomplete_fragment6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"/>
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/bsnsDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginBottom="7.5dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Review"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:ems="10"/>
+
+        <com.maksof.linkapp.ExpandedHeightGridView
+            android:id="@+id/bsnsRecImgCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:isScrollContainer="false"
+            android:minHeight="110dp"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/uploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:background="@drawable/groups_background"
+            android:drawableTop="@drawable/image_uploasd"
+            android:paddingLeft="8sp"
+            android:paddingTop="12sp"
+            android:paddingRight="8sp"
+            android:paddingBottom="5sp"
+            android:text="@string/upload_image_txt"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/groupsSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:visibility="gone"
+            android:entries="@array/entry"/>
+
+        <TextView
+            android:id="@+id/ratingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.5dp"
+            android:text="@string/your_rating"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/bsnsRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:stepSize="0.1"
+            android:numStars="5"
+            android:outlineAmbientShadowColor="#ffffff"
+            android:theme="@style/RatingBar"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/closeBsnsDialogue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@id/shareBsnsProfile"
+                android:layout_toLeftOf="@id/shareBsnsProfile"
+                android:background="@drawable/black_btn_background"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/shareBsnsProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/black_btn_background"
+                android:text="@string/share"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

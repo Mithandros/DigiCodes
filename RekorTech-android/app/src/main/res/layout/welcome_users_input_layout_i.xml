@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".start_screen">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/logotxt" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/montserrat_bold"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/appName"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="36sp" />-->
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="180dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
+
+            <RelativeLayout
+                android:id="@+id/firstPartCon"
+                android:translationX="0dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <EditText
+                    android:id="@+id/welcomeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/name"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingEnd="10dp" />
+
+                <ImageButton
+                    android:id="@+id/welcomeINextBtn"
+                    android:layout_width="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="50dp"
+                    android:background="@drawable/black_circle"
+                    android:onClick="goNextWelcomePage"
+                    android:contentDescription="@string/go_back"
+                    app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/SecondPartCon"
+                android:translationX="800dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/welcomeNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/phone_number"
+                    android:importantForAutofill="no"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/welcomePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/welcomeNumber"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress" />
+
+                <Button
+                    android:id="@+id/welcomeIIContBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/welcomePassword"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/black_btn_background"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|top"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
+
+            <!--            <Button-->
+            <!--                android:id="@+id/welcomeINextBtn"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginBottom="10dp"-->
+            <!--                android:onClick="goNextWelcomePage"-->
+            <!--                android:background="@drawable/black_btn_background"-->
+            <!--                android:text="Next"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="#ffffff" />-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/welcomeIIContBtn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/black_btn_background"-->
+<!--                android:text="Continue"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:visibility="gone" />-->
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/log_in"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

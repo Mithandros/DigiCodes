@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <group  android:id="@+id/topMenus">-->
+        <item android:id="@+id/home" android:icon="@drawable/ic_dashboard" android:title="@string/home" />
+        <item android:id="@+id/notifcation" android:icon="@drawable/bell" android:title="Notifications" />
+        <!--<item android:id="@+id/changepass" android:icon="@drawable/ic_changepass" android:title="@string/change_passowrd" />-->
+<!--    </group>-->
+<!--    <group android:id="@+id/bottomMenus">-->
+    <!--<item android:id="@+id/myprofile" android:icon="@drawable/ic_profile" android:title="@string/my_profile" />-->
+    <item android:id="@+id/setting" android:icon="@drawable/ic_settings_black_24dp" android:title="Settings" />
+
+    <item android:id="@+id/directory" android:icon="@drawable/ic_dir" android:title="@string/directory" android:visible="false" />
+<!--    </group>-->
+    <!--<item android:id="@+id/logout" android:icon="@drawable/ic_signout" android:title="@string/log_out" />-->
+</menu>

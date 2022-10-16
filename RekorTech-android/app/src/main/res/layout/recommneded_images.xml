@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    >
+    <FrameLayout android:id="@+id/root"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="40dp">
+        <ImageView
+            android:padding="3dp"
+            android:id="@+id/imgViewDirec"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/review_images"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="visible"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_close1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:visibility="visible"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_crossimage"/>
+    </LinearLayout>
+</RelativeLayout>

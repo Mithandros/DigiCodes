@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingTop="10dp"
+    android:paddingStart="0dp">
+
+    <TextView
+        android:id="@+id/contactFLetter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/contact_icon_shape"
+        android:gravity="center"
+        android:text="J"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/contactFLetter"
+        android:layout_toRightOf="@id/contactFLetter"
+        android:ems="3"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:minLines="1"
+        android:ellipsize="end"
+        android:minWidth="10dp"
+        android:text="wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/shareProfBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/share_to_lab"
+        app:srcCompat="@drawable/share"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/labProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/share_to_lab"
+        app:srcCompat="@drawable/ic_splash_logo"
+        android:visibility="gone"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/contactFLetter"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/darker_gray"
+        android:foregroundGravity="center" />
+
+</RelativeLayout>
