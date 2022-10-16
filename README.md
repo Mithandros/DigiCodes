@@ -13,10 +13,10 @@ This product has both web and mobile versions.
 ### Web
 Built with Reactjs
 
-###Mobile
+### Mobile
 Built using Java
 
-##Additional Info
+## Additional Info
 As part of the Global Developer Hackfest 2.0, we took part in an MLH challenge.
 
 Go Daddy Registry - reckortech.co
