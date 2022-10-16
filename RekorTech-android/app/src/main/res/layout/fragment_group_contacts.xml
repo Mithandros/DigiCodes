@@ -13,7 +13,7 @@
        android:paddingBottom="20dp"
        android:orientation="vertical"
        android:paddingTop="10dp">
-       <com.maksof.linkapp.AnimatedExpandableListView
+       <com.rekortech.android.AnimatedExpandableListView
            android:id="@+id/groupContactList"
            android:layout_width="match_parent"
            android:layout_height="match_parent"

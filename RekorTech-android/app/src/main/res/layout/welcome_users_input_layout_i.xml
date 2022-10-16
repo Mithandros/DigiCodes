@@ -30,7 +30,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/app_name"
-                app:srcCompat="@drawable/logotxt" />
+                app:srcCompat="@drawable/splash_logo" />
 
 <!--            <TextView-->
 <!--                android:id="@+id/textView2"-->
@@ -78,11 +78,11 @@
                 <ImageButton
                     android:id="@+id/welcomeINextBtn"
                     android:layout_width="50dp"
-                    android:layout_alignParentEnd="true"
                     android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
                     android:background="@drawable/black_circle"
-                    android:onClick="goNextWelcomePage"
                     android:contentDescription="@string/go_back"
+                    android:onClick="goNextWelcomePage"
                     app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
             </RelativeLayout>
 

@@ -3,21 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/black_circle.xml" value="0.12395833333333334" />
         <entry key="app/src/main/res/drawable/chat.xml" value="0.146875" />
         <entry key="app/src/main/res/drawable/checked.xml" value="0.146875" />
         <entry key="app/src/main/res/drawable/download.xml" value="0.146875" />
+        <entry key="app/src/main/res/drawable/email.xml" value="0.20677083333333332" />
+        <entry key="app/src/main/res/drawable/gradient_topbar.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/drawable/ic_delete_black_24dp.xml" value="0.146875" />
         <entry key="app/src/main/res/drawable/ic_file_download.xml" value="0.146875" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.146875" />
+        <entry key="app/src/main/res/drawable/ic_public.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/drawable/ic_whatsapp.xml" value="0.146875" />
         <entry key="app/src/main/res/drawable/info.xml" value="0.146875" />
         <entry key="app/src/main/res/drawable/phone_black.xml" value="0.146875" />
+        <entry key="app/src/main/res/drawable/supervisor.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/layout/activity_add_participants.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_group_contacts.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_lab_user_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_phone_book.xml" value="0.1" />
         <entry key="app/src/main/res/layout/directory_profile.xml" value="0.13072916666666667" />
         <entry key="app/src/main/res/layout/fragment_setting_fragment.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/header.xml" value="0.20625" />
         <entry key="app/src/main/res/layout/lab_home_fragment.xml" value="0.20625" />
         <entry key="app/src/main/res/layout/phone_home_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/review_modal_dialgue.xml" value="0.1" />

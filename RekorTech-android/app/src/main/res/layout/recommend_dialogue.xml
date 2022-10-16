@@ -158,7 +158,7 @@
             android:inputType="textMultiLine"
             android:minLines="3"
             android:autofillHints="" />
-        <com.maksof.linkapp.ExpandedHeightGridView
+        <com.rekortech.android.ExpandedHeightGridView
             android:id="@+id/recImgCon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

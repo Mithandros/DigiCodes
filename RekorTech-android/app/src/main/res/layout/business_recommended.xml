@@ -117,7 +117,7 @@
             android:layout_height="20dp"
             android:ems="10"/>
 
-        <com.maksof.linkapp.ExpandedHeightGridView
+        <com.rekortech.android.ExpandedHeightGridView
             android:id="@+id/bsnsRecImgCon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -483,7 +483,7 @@
                         android:paddingRight="5dp"
                         android:layout_toLeftOf="@+id/dir_profAddImage"/>
                 </RelativeLayout>
-                <com.maksof.linkapp.ExpandedHeightGridView
+                <com.rekortech.android.ExpandedHeightGridView
                     android:id="@+id/dirProfImgCon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -13,7 +13,7 @@
         android:id="@+id/phoneHome2"
         android:orientation="vertical">
 
-        <com.maksof.linkapp.AnimatedExpandableListView
+        <com.rekortech.android.AnimatedExpandableListView
         android:id="@+id/labExpandList"
             android:visibility="gone"
         android:layout_width="match_parent"

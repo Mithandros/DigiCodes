@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.maksof.linkapp">
+    package="com.rekortech.android">
 
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -35,18 +35,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".add_participants" />
-        <activity android:name=".create_group" />
-        <activity android:name=".create_directory" />
-        <activity android:name=".directory_profile" />
-        <activity android:name=".groupContacts" />
-        <activity android:name=".lab_user_details" />
+        <activity android:name="com.rekortech.android.create_group" />
+        <activity android:name="com.rekortech.android.lab_user_details" />
         <activity
-            android:name=".mainPage"
+            android:name="com.rekortech.android.mainPage"
             android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".start_screen"
+            android:name="com.rekortech.android.start_screen"
             android:theme="@style/SplashTheme"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
@@ -57,13 +53,13 @@
         </activity>
 
         <service
-            android:name=".NotificationIntentService"
+            android:name="com.rekortech.android.NotificationIntentService"
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <receiver android:name=".NotificationEventReceiver" />
-        <receiver android:name=".NotificationServiceStarterReceiver">
+        <receiver android:name="com.rekortech.android.NotificationEventReceiver" />
+        <receiver android:name="com.rekortech.android.NotificationServiceStarterReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
